@@ -1,0 +1,1 @@
+Namespace(sh_degree=3, source_path='/media/kad/New_Volume1/CV_Project/3dgs-superres/data/raw/tandt/truck', model_path='outputs/renders/truck_test', images='images', depths='', resolution=-1, white_background=False, train_test_exp=False, data_device='cuda', eval=False)

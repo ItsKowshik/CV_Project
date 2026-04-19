@@ -1,6 +1,7 @@
 # Data — too large, download manually
 data/raw/
 data/processed/
+data/colmap_input/
 
 # Training outputs
 output/

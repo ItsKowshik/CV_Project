@@ -1,0 +1,4 @@
+[17:49:17] === STAGE 0: COLMAP SfM ===
+[17:49:17]   aeroplane: sparse exists, skipping
+[17:49:17]   cycle: sparse exists, skipping
+[17:49:17]   Running COLMAP for face...

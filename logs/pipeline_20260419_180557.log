@@ -1,0 +1,25 @@
+[18:05:57] === STAGE 0: COLMAP SfM ===
+[18:05:57]   aeroplane: sparse exists, skipping
+[18:05:57]   cycle: sparse exists, skipping
+[18:05:57]   face: sparse exists, skipping
+[18:05:57]   still3: sparse exists, skipping
+[18:05:57] === STAGE 1: 3DGS Training (30000 iters) ===
+[18:05:57]   Training aeroplane...
+Optimizing output/aeroplane_lr
+Output folder: output/aeroplane_lr [19/04 18:06:00]
+------------LLFF HOLD------------- [19/04 18:06:00]
+Reading camera 1/30Traceback (most recent call last):
+  File "/media/kad/New_Volume1/CV_Project/3dgs-superres/src/gaussian_splatting/train.py", line 282, in <module>
+    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint, args.debug_from)
+  File "/media/kad/New_Volume1/CV_Project/3dgs-superres/src/gaussian_splatting/train.py", line 51, in training
+    scene = Scene(dataset, gaussians)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/kad/New_Volume1/CV_Project/3dgs-superres/src/gaussian_splatting/scene/__init__.py", line 44, in __init__
+    scene_info = sceneLoadTypeCallbacks["Colmap"](args.source_path, args.images, args.depths, args.eval, args.train_test_exp)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/kad/New_Volume1/CV_Project/3dgs-superres/src/gaussian_splatting/scene/dataset_readers.py", line 194, in readColmapSceneInfo
+    cam_infos_unsorted = readColmapCameras(
+                         ^^^^^^^^^^^^^^^^^^
+  File "/media/kad/New_Volume1/CV_Project/3dgs-superres/src/gaussian_splatting/scene/dataset_readers.py", line 98, in readColmapCameras
+    assert False, "Colmap camera model not handled: only undistorted datasets (PINHOLE or SIMPLE_PINHOLE cameras) supported!"
+AssertionError: Colmap camera model not handled: only undistorted datasets (PINHOLE or SIMPLE_PINHOLE cameras) supported!
