@@ -1,0 +1,34 @@
+# Data — too large, download manually
+data/raw/
+data/processed/
+
+# Training outputs
+output/
+
+# Model weights
+models/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# COLMAP databases
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor
+.vscode/
+.idea/
+
+# wandb
+wandb/
+
+# OS
+.DS_Store
+Thumbs.db

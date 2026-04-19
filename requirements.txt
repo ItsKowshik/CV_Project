@@ -1,0 +1,32 @@
+# Core Deep Learning
+torch
+torchvision
+numpy
+Pillow
+opencv-python
+scipy
+
+# 3DGS-Specific
+plyfile
+tqdm
+einops
+
+# Super-Resolution Models
+basicsr
+realesrgan
+timm
+
+# Metrics
+lpips
+scikit-image
+torchmetrics
+
+# Experiment Tracking & Config
+wandb
+omegaconf
+PyYAML
+
+# Visualization
+matplotlib
+imageio
+imageio-ffmpeg
